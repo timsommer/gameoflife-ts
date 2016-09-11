@@ -1,4 +1,4 @@
-namespace Util {
+namespace Util.Events {
   /**
    * Uses feature detection to remove an eventHandler to a supplied element
    * @method removeEventHandler
