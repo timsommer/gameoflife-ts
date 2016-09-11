@@ -33,6 +33,8 @@ $(document).ready(function(){
   // Publishers are in charge of "publishing" notifications about events
   Util.Messenger.publish('logging', 'Publish test from the example view');
 
+  debugger;
+
   var superToken = '0';
   $("#subscribe").click(function(){
     if(superToken === '0'){

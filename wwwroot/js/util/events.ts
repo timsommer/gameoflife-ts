@@ -1,11 +1,4 @@
-/**
- * Provides helper methods for DOM elements.
- * @author Tim Sommer
- * @namespace Util
- * @class Events
- * facade
- */
-namespace Util.Events {
+namespace Util {
   /**
    * Uses feature detection to remove an eventHandler to a supplied element
    * @method removeEventHandler

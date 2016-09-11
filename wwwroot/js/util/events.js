@@ -1,10 +1,3 @@
-/**
- * Provides helper methods for DOM elements.
- * @author Tim Sommer
- * @namespace Util
- * @class Events
- * facade
- */
 var Util;
 (function (Util) {
     var Events;
