@@ -1,5 +1,5 @@
 /// <reference path="gameoflife/Factory.ts" />
-/// <reference path="util/events.ts" />
+/// <reference path="./util/events.ts" />
 /**
  * Initializes the example view using jQuery document.ready
  * @author Tim Sommer
@@ -15,6 +15,7 @@ $(document).ready(function () {
         console.error("New Factory instance is not exactly the same as the original instance. Singleton pattern does not work!");
         throw "Singleton pattern inference";
     }
+    //test
     //Attach EventListeners for creating new GoL instances
     Util.Events.addEventHandler(document.getElementById("default"), "click", function () { lf.createLife(""); });
     Util.Events.addEventHandler(document.getElementById("red"), "click", function () { lf.createLife("red"); });
