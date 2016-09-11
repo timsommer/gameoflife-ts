@@ -1,0 +1,34 @@
+<div id="innerContent"></div>
+
+<div id="right-content">
+    <h2>Controls</h2>
+	<p>
+		<input type="button" id="default" value="Default" />
+		<input type="button" id="red" value="Red" />
+		<input type="button" id="green" value="Green" />
+		<input type="button" id="blue" value="Blue" />
+	</p>
+    <p>Generation counter: <span id="counter">0</span></p>
+    <p>Cell Size: <input type="range" id="cellSize" min="5" max="20" value="8" step="1" /></p>
+	<p>Cell Delay: <input type="range" id="cellDelay" min="500" max="2000" value="500" step="100" /></p>
+    <a id="controlLink" href="javascript:void(0)">Start/Stop</a><br />
+    <a id="clearLink" href="javascript:void(0)">Clear Grid</a>
+    <br />
+    <p>
+        <a id="subscribe" href="javascript:void(0)">Subscribe all publishers</a><br/>
+        <textarea id="logger" style="display:none; width: 80%; height: 300px;"></textarea>
+    </p>
+</div>
+
+@section Scripts
+{
+        <script src="~/scripts/GameOfLife/cell.js"></script>
+        <script src="~/scripts/GameOfLife/factory.js"></script>
+        <script src="~/scripts/GameOfLife/gameoflife.js"></script>
+        <script src="~/scripts/GameOfLife/organism.js"></script>
+
+        <script src="~/scripts/util/messenger.js"></script>
+        <script src="~/scripts/util/guid.js"></script>
+        <script src="~/scripts/util/events.js"></script>
+        <script src="~/scripts/app.js"></script>
+}
